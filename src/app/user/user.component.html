@@ -1,0 +1,20 @@
+<form #f="ngForm">
+  User Id:<br>
+  <input type="text" name="userId" class="form-control" [(ngModel)]="user.userId">
+  <br>
+  User name:<br>
+  <input type="text" name="userName"  [(ngModel)]="user.userName" >
+  <br><br>
+  User password:<br>
+  <input type="text" name="userName"  [(ngModel)]="user.userPassword" >
+  <br>
+  User Mobile:<br>
+  <input type="text" name="userMobile"  [(ngModel)]="user.userMobile"  >
+  <br>
+  <button type="submit" value="Submit" (click)="getUser(user)">Submit
+</button>
+</form>
+
+    <!-- [(ngModel)]="user.userId"
+    [(ngModel)]="user.userName"
+    [(ngModel)]="user.userMobile" -->
